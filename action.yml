@@ -1,0 +1,5 @@
+name: 'protobuf go gen check'
+description: 'Check go libraries are up-to-date'
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
