@@ -1,5 +1,12 @@
 name: 'protobuf go gen check'
 description: 'Check go libraries are up-to-date'
+inputs:
+  folder:
+    description: 'Folder to check'
+    required: true
+    default: ''
 runs:
   using: 'docker'
   image: 'Dockerfile'
+  args:
+    - ${{ inputs.folder }}
