@@ -1,4 +1,4 @@
-FROM golang:1.20-alpine
+FROM golang:1.24-alpine
 
 RUN apk add --no-cache protobuf protobuf-dev git
 RUN go install google.golang.org/protobuf/cmd/protoc-gen-go@v1.30.0
